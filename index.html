@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="boxStart">
+      <div class="title">
+        <span>Rules of this Quiz</span>
+      </div>
+      <div class="rules">
+        <ol>
+          <li>You will have <span>10 questions</span></li>
+          <li>You will have only <span>15 seconds </span>per each question.</li>
+          <li>Once you select your answer. you can't reselect.</li>
+          <li>You can't select any option once time goes off.</li>
+          <li>You will get your score after finishing quiz</li>
+        </ol>
+      </div>
+      <div class="buttons">
+        <button class="quit">Exit Quiz</button>
+        <button class="start" onclick="showQuiz()">Continue</button>
+      </div>
+    </div>
+    <div id="box">
+      <header>
+        <div class="title">JavaScript Quiz</div>
+        <div class="timer">
+          <div class="text">Time Left</div>
+          <div class="sec">15</div>
+        </div>
+      </header>
+      <div class="quiz">
+        <h2 id="question"></h2>
+        <div id="chooces">
+          <button class="btn"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+        </div>
+        <button id="next-btn"></button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
